@@ -12,13 +12,3 @@ class Solution:
                     res[index] = ind - index
                 stack.append((ind,val))
         return res
-                
-                    
-
-                    
-
-        if len(res) < len(stack):
-            i = 0
-            while i < (len(stack) - len(res)):
-                res.append(0)
-        return res
