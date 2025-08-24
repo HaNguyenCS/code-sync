@@ -11,11 +11,10 @@ class Solution:
             return None
         q = deque([root])
         while q:
-            for i in range(len(q)):
-                cur = q.popleft()
-                cur.right, cur.left = cur.left, cur.right
-                if cur.right:
-                    q.append(cur.right)
-                if cur.left:
-                    q.append(cur.left)  
+            cur = q.popleft()
+            cur.right, cur.left = cur.left, cur.right
+            if cur.right:
+                q.append(cur.right)
+            if cur.left:
+                q.append(cur.left)  
         return root
