@@ -17,13 +17,9 @@ class Solution:
                 sort.append(root.val)
                 root = root.right
 
-        print(sort)
         n = len(sort)
         mid = floor(n/2)
         root = TreeNode(sort[mid])
-
-        print(mid)
-        print(root)
 
         queue = deque()
         
