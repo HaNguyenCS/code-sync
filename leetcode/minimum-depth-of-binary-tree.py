@@ -12,10 +12,8 @@ class Solution:
         minDepth = []
         q = deque([root])
         while q:
-            lev = []
             for i in range(len(q)):
                 cur = q.popleft()
-                lev.append(cur)
                 if cur.right is None and cur.left is None:
                     return depth
                 if cur.right:
